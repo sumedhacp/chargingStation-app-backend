@@ -50,7 +50,7 @@ app.post("/add-vehicle", async (request, response) => {
 
 })
 
-app.get("/view-vehicle", async (request, response) => {
+app.post("/view-vehicle", async (request, response) => {
 
     const Vehicles = await Vehicle.find()
 
