@@ -44,7 +44,7 @@ const Vehicle = mongoose.model("Vehicles", new mongoose.Schema(
 
 app.post("/add-vehicle", async (request, response) => {
 
-    await Vehicles.create(request.body)
+    await Vehicle.create(request.body)
 
     response.json({ "status": "success" })
 
